@@ -66,6 +66,9 @@ datingDataMat,datinglabels = file2matrix(file_path)
 normMat,ranges,minvals = autoNorm(datingDataMat)
 m = normMat.shape[0]
 numTestVecs = int(m*hoRtio)
+errorCount = 0.0
+
+
 #datingClassTest()
 
 def classify0(inX, dataSet, labels, k):
